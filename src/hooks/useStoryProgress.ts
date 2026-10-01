@@ -24,7 +24,9 @@ export function useStoryProgress(ref: RefObject<HTMLElement | null>, callback: (
     const update = () => {
       frame = 0;
       if (document.hidden || !visible) return;
-      const distance = Math.max(section.offsetHeight - window.innerHeight, 1);
+      const sticky = section.querySelector<HTMLElement>('.hero-sticky');
+      const viewportHeight = sticky?.offsetHeight ?? window.innerHeight;
+      const distance = Math.max(section.offsetHeight - viewportHeight, 1);
       const progress = Math.min(Math.max(-section.getBoundingClientRect().top / distance, 0), 1);
       currentCallback.current(progress);
     };
@@ -46,3 +48,4 @@ export function useStoryProgress(ref: RefObject<HTMLElement | null>, callback: (
     };
   }, [ref,isStatic]);
 }
+

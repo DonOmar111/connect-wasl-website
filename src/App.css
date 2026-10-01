@@ -247,7 +247,7 @@ section[id] {
 }
 /* Cinematic hero. The copy enters only after the video's last chapter. */
 .hero-scroll {
-  height: 300svh;
+  height: 160svh;
   position: relative;
   background: var(--navy-950);
 }
@@ -1866,6 +1866,7 @@ section[id] {
     transition: none !important;
   }
 }
+
 
 
 
