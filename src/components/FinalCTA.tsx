@@ -1,0 +1,7 @@
+import { LaunchButton } from './LaunchActions';
+export default function FinalCTA() {
+  return <section className="final-cta" id="contact" aria-labelledby="final-title"><div className="final-cta-content"><span className="eyebrow" dir="ltr">CONNECT WASL</span><h2 id="final-title">كل محادثة.<br />تحت السيطرة.</h2><p>اجمع فريقك ومحادثات عملائك في مساحة عمل واحدة.</p><div className="final-buttons"><LaunchButton>ابدأ تجربتك</LaunchButton><LaunchButton purpose="sales" className="button button-outline">احجز موعد</LaunchButton></div><small className="launch-status">7 أيام للتجربة · بدون رسوم إعداد</small><div className="footer-downloads"><p>حمّل تطبيق Connect Wasl</p><div className="footer-store-links">
+        <a className="store-link" href="https://apps.apple.com/us/app/connect-wasl/id6803580797" aria-label="تحميل Connect Wasl من App Store"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg><span><small>حمّله من</small><strong dir="ltr">App Store</strong></span></a>
+        <a className="store-link" href="https://play.google.com/store/apps/details?id=com.connectwasl.app" aria-label="تحميل Connect Wasl من Google Play"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"><path d="m5 3 16 9-16 9V3Z"/></svg><span><small>احصل عليه من</small><strong dir="ltr">Google Play</strong></span></a>
+      </div></div></div></section>;
+}
